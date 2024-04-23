@@ -10,21 +10,32 @@ h1 {
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto 400px minmax(200px, 500px);
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-auto-rows: 50px;
+    gap: 10px;
+    height: 80vh;
 }
 .container > div{
     background-color: teal;
+    color: #fff;
+
 }
 </style>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<h1>CSS grid sizing exercise</h1>
 
 <div class="container">
-    <div>expands auto</div>
+    <div>expands to fill space auto</div>
     <div>400px w</div>
+    <div>min 200 max 500 w</div>
+    <div>expands to fill space auto</div>
+    <div>400px w</div>
+    <div>min 200 max 500 w</div>
+    <div>expands to fill space auto</div>
+    <div>400px w</div>
+    <div>min 200 max 500 w</div>
     <div>min 200 max 500 w</div>
 </div>
 
